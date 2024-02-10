@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67810E83-B6F9-41B7-9EC8-50CAC3EBC458}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jogo_Labirinto</RootNamespace>
+    <AssemblyName>Jogo Labirinto</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tela1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela1Form.Designer.cs">
+      <DependentUpon>Tela1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela2Form.Designer.cs">
+      <DependentUpon>Tela2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela3Form.Designer.cs">
+      <DependentUpon>Tela3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela4Form.Designer.cs">
+      <DependentUpon>Tela4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela5Form.Designer.cs">
+      <DependentUpon>Tela5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela6Form.Designer.cs">
+      <DependentUpon>Tela6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tela7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela7Form.Designer.cs">
+      <DependentUpon>Tela7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelainicialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelainicialForm.Designer.cs">
+      <DependentUpon>TelainicialForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tela1Form.resx">
+      <DependentUpon>Tela1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela2Form.resx">
+      <DependentUpon>Tela2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela3Form.resx">
+      <DependentUpon>Tela3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela4Form.resx">
+      <DependentUpon>Tela4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela5Form.resx">
+      <DependentUpon>Tela5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela6Form.resx">
+      <DependentUpon>Tela6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela7Form.resx">
+      <DependentUpon>Tela7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelainicialForm.resx">
+      <DependentUpon>TelainicialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
